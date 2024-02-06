@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="veiwport" content="width=device width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pseudo selectors & more designing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="button_style.css">
+    <style>
+      .container {
+        border: 2px solid red;
+        background-color: rgb(202, 181, 193);
+        padding: 22px;
+        margin: 22px;
+        width: 700px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .btn {
+        background-color: gray;
+        padding: 6px;
+        margin: 2px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+      /* button:hover {
+        color: aliceblue;
+        float: inline-end;
+      } */
+      a:visited {
+        color: limegreen;
+      }
+      a:active {
+        background-color: rgb(0, 0, 0);
+      }
+      h2:hover {
+        color: aliceblue;
+      }
+      summary:hover {
+        cursor: pointer;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cont1">
+      <h2>Header</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        nihil libero ex illum. Id, itaque vero. Optio labore blanditiis
+        perferendis aperiam possimus sint error a reprehenderit id deserunt,
+        enim nobis consequatur cumque dignissimos ut ratione veniam itaque.
+        Velit, culpa libero..
+        <details>
+          <summary>Read more</summary>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nostrum
+          officia et laborum aliquid pariatur nemo explicabo, nobis totam
+          commodi quasi sequi qui aspernatur ipsum iusto eos tempora consequatur
+          asperiores!
+        </details>
+      </p>
+      <a href="About.html" class="btn">Read more</a>
+      <button class="btn">Contact us</button>
+      <div class="prank">
+      <div class="wrapper">
+        <i class="fa-solid fa-circle-question"></i>
+        <h2 class="question">Do you love me ?</h2>
+        <div class="btn_group">
+          <button class="yes">Yes</button>
+          <button class="no">No</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

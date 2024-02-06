@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input tag</title>
+</head>
+<body>
+    <h2>This is HTML form tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Username</label>
+        <div>
+            <input type="text" name="MyName" id="name">
+        </div><br>
+        <label for="email">E-Mail</label>
+        <div><input type="email" name="MyEmail" id="email"></div><br>
+        <label for="password">Password</label>
+        <div><input type="text" name="MyPassword" id="password"></div>
+        <div>
+            Date: <input type="date" name="MyDate">
+        </div><br><br>
+        <div>
+            <label for="age">Are you adult?</label>
+            <input type="checkbox" name="18+" id="age">
+        </div><br>
+        <!-- <div>
+            Gender: Male<input type ="radio" name="gender"> 
+            Female<input type ="radio" name="gender">
+        </div><br> -->
+        <label for="gender">Choose Your Gender</label>
+        <select name="Gender" id="gender">
+            <option value="Male">male</option>
+            <option value="Female">female</option>
+            <option value="other">other</option>
+        </select>
+        <div>
+            How much bonus do you want:<input type="number" name="bonus">
+        </div><br>
+
+        <div>
+            And why: <br><textarea name="description" cols="30" rows="3">WRITE HERE</textarea>
+        </div>
+
+        <div>
+           <input type ="submit" value="Submit Now">&nbsp;
+           <input type ="reset" value="Reset">
+        </div><br>
+    </form>
+    
+</body>
+</html> 

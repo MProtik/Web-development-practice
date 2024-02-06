@@ -1,0 +1,9 @@
+.fonts{
+    font-family:'rubik', sans-serif;
+    font-size: 30px;
+    line-height:50px;
+}
+em{
+    font-weight:bold;
+    font-style: normal;
+}

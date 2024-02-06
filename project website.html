@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Acme", sans-serif;
+      }
+      body {
+        font-family: "Acme", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url(/images/martial\ art.jpg);
+        background-repeat: no-repeat;
+        color: aliceblue;
+        height: 2000px;
+      }
+      .left {
+        display: block;
+        position: absolute;
+        left: 34px;
+        margin: 0px 10px;
+        width: 280px;
+        position:fixed;
+      }
+      .mid {
+        display: block;
+        width: 50%;
+        margin: 12px auto;
+        height: 80px;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        margin: 24px 10px;
+      }
+      .navbar li {
+        display: inline-block;
+        color: white;
+        margin: 10px;
+        font-size: 25px;
+      }
+      .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+
+        border-radius: 15px;
+        padding: 5px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        color: black;
+        background-color: white;
+        text-decoration: underline grey;
+      }
+      .left img {
+        width: 111px;
+      }
+      .left p {
+        text-align: center;
+        font-family: "Righteous", cursive;
+        font-size: 30px;
+        float: right;
+      }
+      .btn {
+        margin: 0px 10px;
+        padding: 3px 12px;
+        background-color: rgba(255, 255, 255, 0.062);
+        color: black;
+        border: 2px solid rgba(0, 0, 0, 0.486);
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: "Acme", sans-serif;
+      }
+      .btn:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.63);
+      }
+      .container {
+        margin: 101px 54px;
+        padding: 90px 22px;
+        width: 84%;
+        border-radius: 5px;
+      }
+      .form_group input {
+        margin: 19px auto;
+        text-align: center;
+        display: block;
+        padding: 9px;
+        width: 80%;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .container h1 {
+        text-align: center;
+        font-size: 100px;
+      }
+      .container .btn {
+        display: block;
+        margin: 50px auto;
+        width: 30%;
+      }
+      .time input {
+        width: 30%;
+        display: inline-block;
+        border: 2px solid black;
+      }
+      span {
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="/images/final logo.png" alt="" />
+        <p class="name">Mac Fitness</p>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="/About.html">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym in Narsingdi</h1>
+      <form action="noaction.php">
+        <div class="form_group">
+          <input type="text" name="" placeholder="Enter Your Name" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="Enter Your Age" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="Enter Your Gender" />
+        </div>
+        <div class="form_group">
+          <input type="text" name="" placeholder="Enter Your address" />
+        </div>
+        <div class="form_group">
+          <input type="number" name="" placeholder="Enter Your phone-Number" />
+        </div>
+        <div class="form_group time">
+          <span>Enter your schedule:</span>
+          <input type="time" name="" placeholder="Enter Your schedule" />
+          <span>To</span>
+          <input type="time" name="" placeholder="Enter Your schedule" />
+        </div>
+        <div class="form_group time">
+          <span>Enter your Joining Date:</span>
+          <input type="date" name="" placeholder="" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
